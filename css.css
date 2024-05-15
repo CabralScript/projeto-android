@@ -25,8 +25,48 @@
     --font-android: 'Android', cursive;
 }
 
+/*Modo claro e escuro*/
+#claro{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#escuro{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;  
+  transition-duration: 0.5s;
+
+}
+
+#claro:hover{
+    background-color: var(--cor3);
+    color: var(--cor6);
+    transform: scale(1.1);
+}
+#escuro:hover{
+    background-color: var(--cor3);
+    color: var(--cor6);
+    transform: scale(1.1);
+}
+
+/*Fim modo claro e escuro*/
+
 body{
-    background-color:#a7dbbe ;
+    background-color: white ;
     font-family: var(--font-padrao);
 }
 
@@ -75,7 +115,7 @@ nav > a:hover{
    color: var(--cor6); 
 }
 main{
-    background-color: white;
+    background-color: transparent;
             padding: 20px;
             min-width: 220px;
             max-width: 800px;
@@ -83,11 +123,12 @@ main{
             margin-bottom: 30px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
 }
 main h1{
     color: var(--cor6);
     font-family: var(--font-android);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
 }
 main h2{
     font-family: var(--font-android);
